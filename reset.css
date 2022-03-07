@@ -1,0 +1,17 @@
+*{margin:0; padding:0;}
+ul,ol{list-style: none;}
+a{text-decoration: none; color:inherit;}
+input,textarea,button{
+    outline: 0;
+}
+body{
+    font-family:  "나눔스퀘어_ac",Arial,sans-serif;
+    color:#333;
+    font-size:16px;
+    line-height: 1.5;
+}
+.clear::after{ /*clearfix핵*/
+    content: "";
+    display: block;
+    clear: both;
+}

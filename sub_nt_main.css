@@ -1,0 +1,184 @@
+
+/*===========헤더 이미지 설정==============*/
+header{
+    background:linear-gradient(0deg, rgba(0, 0, 0, 0)0%,rgba(0, 0, 0, 0)50%, rgba(0, 0, 0)100%), url(img/images/notice_header.png) center;
+}
+/*=======================================*/
+
+main{
+    width:100%;
+    min-width:1180px;
+    background-color:#e7e4cd;
+    padding:0 5px;
+    padding-top: 5px;
+    box-sizing: border-box;
+}
+main > .wrap{
+    width:1180px;
+    margin:auto;
+}
+
+/*==============사이드바==================*/
+main > .wrap > .sidebar{
+    width:280px;
+    height:100%;
+    float:left;
+    margin-right: 20px;
+}
+main > .wrap > .sidebar > .title{
+    height:83px;
+    text-align: 83px;;
+    background-color: #9b656f;
+    color:#e7e4cd;
+    font-size: 25px;
+    font-family: "HY견고딕";
+    text-indent: 35px;
+    padding-top: 25px;
+    box-sizing: border-box;
+    margin-bottom:15px;
+}
+.sub_list{
+    font-family: "나눔스퀘어_ac";
+    font-size:20px;
+    color:#333;
+}
+.sub_list > li{
+    height:65px;
+    border-radius: 0 10px 10px 0;
+    text-indent:35px;
+    padding-top:15px;
+    box-sizing:border-box;
+    position: relative;
+    overflow: hidden;
+}
+.sub_list > li > .over{
+    position:absolute;
+    top:0;
+    left:-269px;
+    background-color:#9b656f;
+    color:#e7e4cd;
+    width:280px;
+    height:65px;
+    border-radius: 0 10px 10px 0;
+    text-indent:35px;
+    padding-top:15px;
+    box-sizing:border-box;
+}
+.sub_list > li:nth-child(1) > .over{
+    left:0;
+}
+
+.sub_list > li:hover > .over{
+    left:0;
+    transition: all 0.5s;
+}
+/*=================================*/
+/*==========서브타이틀==============*/
+.sub_title{
+    float:left;
+    border-bottom:2px solid #9b656f;
+    width:870px;
+    margin-top: 20px;
+}
+/*=================================*/
+/*============검색버튼==============*/
+.sub_title > .search{
+    float:right;
+    color:#9b656f;
+    padding:10px;
+}
+.sub_title > .search > select{
+    width:100px;
+    height:40px;
+    padding:10px;
+    font-size: 15px;
+    font-family: "나눔스퀘어_ac";
+    font-weight:bold;
+    color:#9b656f;
+    background-color: #e7e4cd;
+    border:1px solid #9b656f;
+}
+.sub_title > .search > input[type=text]{
+    width:225px;
+    height:38px;
+    border:1px solid #9b656f;
+    background-color:#e7e4cd;
+    margin-left: 5px;
+}
+.sub_title > .search > button{
+    width:80px;
+    height:40px;
+    font-size: 15px;
+    font-family: "나눔스퀘어_ac";
+    font-weight:bold;
+    color:#e7e4cd;
+    border:0;
+    background-color: #9b656f;
+    margin-left: 5px;
+    cursor:pointer;
+}
+/*==================================*/
+
+/*===========내용===================*/
+.contents{
+    float:left;
+    width:870px;
+    margin-bottom: 300px;
+}
+/*게시판*/
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+th{
+    border-bottom:1px solid #9b656f;
+    font-size:20px;
+    height:70px;
+    color: #555;
+}
+td{
+    border-bottom:1px dotted #9b656f;
+    font-size: 16px;
+    color:#555;
+}
+td:first-child{
+    padding:30px 40px;
+    text-align: center;
+}
+td:nth-child(3),
+td:nth-child(4){
+    text-align: center;
+}
+.point{
+    background-color: #d8cbba;
+}
+.point > td{
+    font-size:18px;
+    font-weight: bold;
+    color:#9b656f;
+}
+/*페이지*/
+#contents > .number{
+    text-align: center;
+    
+}
+.pagination{
+    display:inline-block;
+    margin-top: 40px;
+    margin-left: 192px;
+}
+.pagination > a{
+    float:left;
+    padding:8px 16px;
+    border:1px solid #9b656f;
+    color: #9b656f;
+    margin:0 8px;
+    transition: all 0.3s;
+}
+.pagination > .active{
+    background-color: #9b656f;
+    color:#e7e4cd
+}
+.pagination > a:hover:not(.active){
+    background-color:#d8cbba;
+}

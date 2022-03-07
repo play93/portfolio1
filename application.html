@@ -1,0 +1,161 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>application</title>
+<!--폰트어썸-->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+<!--css외부정의-->
+<link href="reset.css" rel="stylesheet">
+<link href="sub_header.css" rel="stylesheet">
+<link href="sub_ap_main.css" rel="stylesheet">
+<link href="footer.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="wrap">
+            <nav>
+                <div class="navwrap clear">
+                    <div class="logo">
+                        <a href="index.html"><img src="img/images/sub_logo.png" alt=""></a>
+                    </div>
+                    <ul class="gnb">
+                        <li>
+                            <a href="medical_staff.html">소개</a>
+                            <ul class="intro">
+                                <li><a href="medical_staff.html">의료진</a></li>
+                                <li><a href="#">이용안내</a></li>
+                                <li><a href="#">오시는 길</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="application.html">진료일정</a>
+                            <ul class="schedule">
+                                <li><a href="#">일정</a></li>
+                                <li><a href="application.html">상담신청 및<br>비용문의</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">클리닉</a>
+                            <ul class="clinic">
+                                <li><a href="#">틱장애</a></li>
+                                <li><a href="#">adhd</a></li>
+                                <li><a href="#">인지,학습,언어</a></li>
+                                <li><a href="#">뉴로/바이오<br>피드백</a></li>
+                                <li><a href="#">tms</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">갤러리</a></li>
+                        <li>
+                            <a href="notice.html">커뮤니티</a>
+                            <ul class="community">
+                                <li><a href="notice.html">토닥소식</a></li>
+                                <li><a href="#">상담후기</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">로그인</a></li>
+                    </ul><!--.gnb END-->
+                </div><!--navwrap END-->
+            </nav><!--nav END-->
+        </div><!--wrap END-->
+        <div class="header_txt">
+            <div class="bannerTitle">
+                <img src="img/images/sub_header_txt.png" alt="">
+            </div>
+        </div>
+    </header>
+    
+
+    <main>
+        <div class="wrap clear">
+            <section class="sidebar">
+                <div class="title">
+                    <p>진료일정</p>
+                </div>
+                <ul class="sub_list">
+                    <li>
+                        <a href="#">일정</a>
+                        <div class="over">
+                            <a href="#">일정</a>
+                        </div>
+                    </li>
+                    <li class="active">
+                        <a href="application.html">상담신청 및 비용문의</a>
+                        <div class="over">
+                            <a href="application.html">상담신청 및 비용문의</a>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+            <section class="sub_title clear">
+                <img src="img/images/sub_ap_logo.png">
+            </section>
+            <section class="contents">
+                <article>
+                    <h1>전화 예약<b>000-000-0000</b></h1>
+                    <p>
+                        전화예약은 본인성명, 전화번호, 희망상담일, 시간을 정확히 말씀해 주시기 바랍니다.<br> 
+                        예약 변경시에는 하루전에 통보하여 주시기 바랍니다.<br>
+                        예약가능시간은 평일 08:00 ~ 17:30 / 토요일 08:30 ~ 12:30까지 입니다.<br>
+                        상담예약일 1일전에는 다시한번 상담예약 시간과 일정을 알려드립니다.<br>
+                    </p>
+                </article>
+                <article>
+                    <h1>간편 예약</h1>
+                    <div class="info">
+                        <label for="name">이름</label>
+                        <input type="text" id="name" name="full_name">
+                        <label for="phone">휴대번호</label>
+                        <input type="tel" maxlength="3">
+                         - 
+                        <input type="tel" maxlength="4">
+                         - 
+                        <input type="tel" maxlength="4">
+                    </div>
+                    <div class="info_s">
+                        <label for="age">연령</label>
+                        <input type="tel" maxlength="2" placeholder="세">
+                        <label for="class">상담과목</label>
+                        <input type="text" id="subject" name="subject">
+                    </div>
+                    <div class="send">
+                        <label><input type="checkbox" name="agreement" value="agreement">개인정보 수집 및 이용 동의 (본인은 만 14세 이상이며, [개인정보 수집 및 이용]에 동의합니다.)</label>
+                        <button>예약하기</button>
+                    </div>
+                </article>
+                <article>
+                    <h1>온라인 예약</h1>
+                    <p>
+                        당일 예약을 원하실 경우 전화를 통해 연락 주시면 일정을 안내드립니다.<br>
+                        예약 신청 후 예약 담당자의 전화 상담을 통해 예약이 최종 확정됩니다.<br>
+                        예약과 관련하여 궁금한 점이 있으시면 000-000-0000로 문의해주시기 바랍니다.<br>
+                    </p>
+                    <p class="point">
+                        네이버 온라인 예약은 3일 전부터 예약이 가능하며, 일요일과 법정 공휴일에는 예약을 받지 않습니다.
+                    </p>
+                    <button><a href="https://booking.naver.com/">네이버 예약 바로가기</a></button>
+                </article>
+            </section>
+        </div>
+    </main>
+
+
+    <footer>
+        <div class="wrap clear">
+            <div class="logoImg">
+                <a href="index.html"><img src="img/images/footer_logo.png" alt=""></a>
+            </div>
+            <div class="txt">
+                <p>
+                    <span>마음토닥 정신건강의학과의원</span><span>원장: Patricia W. Mansells</span> <span>경기도 A시 K동 000번지 W타운 C동 000호</span><span>사업자등록번호:000-00-00000</span>
+                </p>
+                <P>
+                    <span>전화번호:000-000-0000</span><span><a href="mailto:todoc@todoc.com">이메일:todoc@todoc.com</a></span><span><a href="#">신고하기</a></span>
+                </P>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

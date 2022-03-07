@@ -1,0 +1,116 @@
+
+/*===========헤더 이미지 설정==============*/
+header{
+    background:linear-gradient(0deg, rgba(0, 0, 0, 0)0%,rgba(0, 0, 0, 0)50%, rgba(0, 0, 0)100%), url(img/images/medical_staff_header.png) center;
+}
+/*=======================================*/
+
+main{
+    width:100%;
+    min-width:1180px;
+    background-color:#e7e4cd;
+    padding:0 5px;
+    padding-top: 5px;
+    box-sizing: border-box;
+}
+main > .wrap{
+    width:1180px;
+    margin:auto;
+}
+
+/*==============사이드바==================*/
+main > .wrap > .sidebar{
+    width:280px;
+    height:100%;
+    float:left;
+    margin-right: 20px;
+}
+main > .wrap > .sidebar > .title{
+    height:83px;
+    text-align: 83px;;
+    background-color: #9b656f;
+    color:#e7e4cd;
+    font-size: 25px;
+    font-family: "HY견고딕";
+    text-indent: 35px;
+    padding-top: 25px;
+    box-sizing: border-box;
+    margin-bottom:15px;
+}
+.sub_list{
+    font-family: "나눔스퀘어_ac";
+    font-size:20px;
+    color:#333;
+}
+.sub_list > li{
+    height:65px;
+    border-radius: 0 10px 10px 0;
+    text-indent:35px;
+    padding-top:15px;
+    box-sizing:border-box;
+    position: relative;
+    overflow: hidden;
+}
+.sub_list > li > .over{
+    position:absolute;
+    top:0;
+    left:-269px;
+    background-color:#9b656f;
+    color:#e7e4cd;
+    width:280px;
+    height:65px;
+    border-radius: 0 10px 10px 0;
+    text-indent:35px;
+    padding-top:15px;
+    box-sizing:border-box;
+}
+.sub_list > li:nth-child(1) > .over{
+    left:0;
+}
+
+.sub_list > li:hover > .over{
+    left:0;
+    transition: all 0.5s;
+}
+/*=================================*/
+/*==========서브타이틀==============*/
+.sub_title{
+    float:left;
+    border-bottom:2px solid #9b656f;
+    width:870px;
+    margin-top: 20px;
+    margin-bottom:50px;
+}
+/*=================================*/
+
+/*===========내용===================*/
+.contents{
+    float:left;
+    width:870px;
+    margin-bottom: 300px;
+}
+.contents > ul > li{
+    width:870px;
+    height:250px;
+    margin-bottom:20px;
+    background-color: #edebda;
+    color:#827970;
+    box-shadow: 5px 7px 10px rgba(0, 0, 0, 0.3);
+    padding:4px 15px;
+    box-sizing: border-box;
+}
+.contents > ul > li > img,
+.contents > ul > li > h1,
+.contents > ul > li > p{
+    float:left;
+}
+.contents > ul > li > h1{
+    margin-top: 40px;
+    margin-left: 55px;
+    width:500px;
+}
+.contents > ul > li > p{
+    margin-top: 25px;
+    margin-left: 80px;
+    line-height: 25px;
+}

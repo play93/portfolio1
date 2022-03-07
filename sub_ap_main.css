@@ -1,0 +1,203 @@
+
+/*===========헤더 이미지 설정==============*/
+header{
+    background:linear-gradient(0deg, rgba(0, 0, 0, 0)0%,rgba(0, 0, 0, 0)50%, rgba(0, 0, 0)100%), url(img/images/application_header.png) center;
+}
+/*=======================================*/
+
+main{
+    width:100%;
+    min-width:1180px;
+    background-color:#e7e4cd;
+    padding:0 5px;
+    padding-top: 5px;
+    box-sizing: border-box;
+}
+main > .wrap{
+    width:1180px;
+    margin:auto;
+}
+
+/*==============사이드바==================*/
+main > .wrap > .sidebar{
+    width:280px;
+    height:100%;
+    float:left;
+    margin-right: 20px;
+}
+main > .wrap > .sidebar > .title{
+    height:83px;
+    text-align: 83px;;
+    background-color: #9b656f;
+    color:#e7e4cd;
+    font-size: 25px;
+    font-family: "HY견고딕";
+    text-indent: 35px;
+    padding-top: 25px;
+    box-sizing: border-box;
+    margin-bottom:15px;
+}
+.sub_list{
+    font-family: "나눔스퀘어_ac";
+    font-size:20px;
+    color:#333;
+}
+.sub_list > li{
+    height:65px;
+    border-radius: 0 10px 10px 0;
+    text-indent:35px;
+    padding-top:15px;
+    box-sizing:border-box;
+    position: relative;
+    overflow: hidden;
+}
+.sub_list > li > .over{
+    position:absolute;
+    top:0;
+    left:-269px;
+    background-color:#9b656f;
+    color:#e7e4cd;
+    width:280px;
+    height:65px;
+    border-radius: 0 10px 10px 0;
+    text-indent:35px;
+    padding-top:15px;
+    box-sizing:border-box;
+}
+.sub_list > li:nth-child(2) > .over{
+    left:0;
+}
+
+.sub_list > li:hover > .over{
+    left:0;
+    transition: all 0.5s;
+}
+/*=================================*/
+/*==========서브타이틀==============*/
+.sub_title{
+    float:left;
+    border-bottom:2px solid #9b656f;
+    width:870px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+/*=================================*/
+
+/*===========내용===================*/
+.contents{
+    float:left;
+    width:870px;
+    margin-bottom: 300px;
+}
+article{
+    padding:50px 0;
+    border-bottom:1px dotted #9b656f;
+}
+.contents > article:last-child{
+    border:0;
+}
+section > article:nth-child(1){
+    padding-top:0;
+}
+article > h1{
+    margin: 0 10px;
+    font-weight: bold;
+    font-size: 20px;
+}
+b{
+    font-size: 25px;
+    color:#9b656f;
+    margin-left: 20px;
+}
+article > p{
+    margin-left: 35px;
+    margin-top: 25px;;
+    font-size: 15px;
+    color:#666;
+    line-height: 19px;
+}
+label{
+    font-size: 15px;
+    color:#333;
+}
+article > .info{
+    width:730px;
+}
+article > div{
+    margin-bottom: 15px;
+}
+article > div:nth-child(2){
+    margin-top: 30px;
+}
+input[type=text]{
+    width: 280px;
+    height:40px;
+    text-indent: 20px;
+    border:1px solid #9b656f;
+    background-color:#e7e4cd;
+}
+.info > input[type=tel]{
+    width:80px;
+    height:40px;
+    text-indent: 20px;
+    border:1px solid #9b656f;
+    background-color:#e7e4cd;
+}
+.info_s > input[type=tel]{
+    width: 280px;
+    height:40px;
+    text-indent: 20px;
+    border:1px solid #9b656f;
+    background-color:#e7e4cd;
+}
+label{
+    margin-right: 10px;
+}
+article > div > label:nth-child(3){
+    padding-left: 20px;
+}
+.send > label{
+    font-size: 12px;
+}
+input::placeholder{
+    text-align: right;
+    padding:10px;
+}
+.send{
+    width:470px;
+    height:80px;
+    margin-left: 40px;
+}
+.send > button{
+    margin-top:20px;
+}
+input[type="checkbox"]{
+    vertical-align: middle;
+    width:15px;
+    height:15px;
+    cursor:pointer;
+    margin-right:5px;
+}
+.send > button{
+    width:165px;
+    height:40px;
+    border:0;
+    background-color: #9b656f;
+    color:#e7e4cd;
+    font-size:18px;
+    cursor:pointer;
+}
+.point{
+    font-size: 20px;
+}
+button{
+    width: 280px;
+    height:60px;
+    border:0;
+    color:#fff;
+    background-color: #2db400;
+    font-size: 20px;
+    margin-top:70px;
+    margin-left: 280px;
+    cursor:pointer;
+}

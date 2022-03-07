@@ -1,0 +1,508 @@
+button{
+    cursor: pointer;
+    border: none;
+    background-color:transparent;
+}
+header{
+    height:690px;
+    background-color: #e7e4cd;
+    color:#fff;
+    width:100%;
+    min-width:1180px;
+    position:relative;
+    
+}
+/*===============상단메뉴=================*/
+nav{
+    width:100%;
+    min-width:1180px;
+    height:50px;
+    position: absolute;
+    top:0;
+}
+nav > .navwrap{
+    width:1180px;
+    margin:auto;
+    line-height: 50px;
+}
+.logo{
+    float:left;
+    margin-left:20px;
+}
+.gnb{
+    float:right;
+}
+.gnb > li{
+    width:100px;
+    text-align: center;
+    float:left;
+    margin-right:10px;
+    
+}
+
+.gnb > li:hover > a{
+    font-weight: bold;
+    font-size: 18px;
+    border-bottom:4px solid #fff;
+    transition: 0.3s;
+    padding-bottom:5px;
+}
+.gnb > li > ul{
+    line-height: 1.3;
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 20px;
+    padding:5px;
+    font-size: 14px;
+    display: none;
+    transition: 0.3s;
+}
+.gnb > li > ul > li{
+    margin-top:10px;
+}
+.gnb > li > ul > li:last-child{
+    margin-bottom:10px;
+}
+.gnb > li > ul > li:hover{
+    font-weight:bold;
+}
+.gnb > li:hover > ul{
+    display: block;
+}
+/*===============================*/
+/*======메인 이미지슬라이드=======*/
+.slider{
+    position: relative;
+    width:1180px;
+    margin: auto;
+}
+.mainPic{
+    width:1180px;
+    height:690px;
+    margin:auto;
+    position:relative;
+}
+.mainPic > li {
+    width:100%;
+    height:100%;
+    animation: fade 1.5s;
+}
+@keyframes fade{
+    0%{opacity: 0.4;}
+    100%{opacity: 1;}
+}
+.mainPic > li > img:first-child{
+    position:absolute;
+    top:230px;
+    left:40px;  
+    animation: slide 1.5s;
+}
+@keyframes slide{
+    0%{left: 0;}
+    100%{left: 40;}
+}
+.mainPic > li > img:last-child{
+    position: absolute;
+    top:0;
+    right:0;
+}
+.mainPic > li:nth-child(2){
+    display: none;
+}
+.slideBtn{
+    position: absolute;
+    width:1180px;
+    height: 100%;
+    top:0;
+}
+.prev{
+    opacity: 0.4;
+    position: absolute;
+    top:50%;
+    transform:translateY(-50%);
+    left: 400px;
+    transition: all 0.2s;
+}
+.next{
+    opacity: 0.4;
+    position: absolute;
+    top:50%;
+    right:15px;
+    transform:translateY(-50%);
+    transition: all 0.2s;
+}
+.prev:hover,
+.next:hover{
+    opacity: 1;
+}
+
+.slider > button{
+    position: absolute;
+    bottom:80px;
+    left: 80px;
+    border:none;
+    background-color: transparent;
+    cursor: pointer;
+}
+/*=================================*/
+/*==========ClinicProgram=======*/
+.cp{
+    width:100%;
+    min-width:1180px;
+    margin:auto;
+    height:534px;
+    background-color: #aea295;
+}
+.cp > .wrap{
+    width:1180px;
+    margin:auto;
+    overflow: hidden;
+}
+.cp > .wrap > a{
+    float:left;
+    margin-top:40px;
+    margin-left:40px;
+}
+.cp > .tub{
+    position:relative;
+    width:100%;
+    height:336px;
+    background-color: #9b656f;
+    margin:auto;
+    margin-top:30px;
+    padding:20px 0;
+    box-sizing: border-box;
+}
+.cp > .tub > .slide{
+    width:990px;
+    height:310px;
+    margin:auto;
+    position: relative;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.cp > .tub > .slide > .wrap{
+    height:300px;
+    position: absolute;
+    margin-left: 10px;
+    transition:left 0.5s ease-out;
+    z-index: 10;
+}
+.cp > .tub > .slide > .wrap > li{
+    width:219px;
+    height:298px;
+    border-radius: 40px;
+    float:left;
+    margin-right: 30px;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.2);
+    filter: drop-shadow(1.5px 1.5px 0.5px rgba(0,0,0,0.5))
+}
+.cp > .tub > .wrap > li:last-child{
+    margin-right: 0;
+}
+.tub > .cp_btn{
+    width:1150px;
+    height: 298px;
+    margin: auto;
+    position: absolute;
+    top:0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.tub > .cp_btn > .prev{
+    margin:auto;
+    position:absolute;
+    left:20px;
+}
+.tub > .cp_btn > .next{
+    right: 25px;
+}
+/*========================================*/
+/*=========Medical staff==================*/
+.ms{
+    width:100%;
+    min-width:1180px;
+    height: 520px;
+    margin:auto;
+    background-color: #aea295;
+    position:relative;
+}
+.ms > .ms_logo{
+    width:1180px;
+    margin:auto;
+}
+.ms > .ms_logo > a{
+    float:right;
+    margin-top:40px;
+    margin-right:40px;
+}
+.ms > .wrap > .bg{
+    width:100%;
+    height: 200px;
+    background-color: #827970;
+    margin-top: 75px;
+}
+.ms > .list{
+    position: absolute;
+    left:50%;
+    top:200px;
+    transform:translateX(-50%);
+    width:1000px;
+    height:300px;
+}
+.ms > .list > li{
+    float:left;
+    margin-right:120px;
+    color:white;
+    text-shadow:1px 1px 3px black;
+    font-weight: bold;
+    position:relative;
+    text-align:center;
+    line-height: 1.3;
+}
+.ms > .list > li:first-child{
+    margin-left:40px;
+}
+.ms > .list > li:last-child{
+    margin-right: 0;
+}
+.ms > .list > li > .f{
+    width:221px;
+    height:254px;
+    box-shadow: 10px 10px #9b656f;
+    transition: all 2s;
+}
+.ms > .list > li > .b{
+    position: absolute;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    background-color: rgba(0,0,0,0.7);
+    padding-top:80px;
+    box-sizing: border-box;
+    opacity:0;
+    cursor:pointer;
+    transition: all 0.7s;
+}
+.ms > .list > li > .b > p{
+    margin-bottom:10px;
+}
+.ms > .list > li:hover > .b{
+    opacity:1;
+}
+/*========================================*/
+/*=============Community==================*/
+.cm{
+    width:100%;
+    min-width:1180px;
+    background-color: #aea295;
+    position:relative;
+    padding-top: 30px;
+    padding-bottom: 100px;
+}
+.cm_logo{
+    width:1180px;
+    margin: auto;
+    margin-bottom: 45px;
+}
+.cm_logo > a{
+    margin-top: 40px;
+    margin-left: 40px;
+} 
+.cm_wrap{
+    position: relative;
+    width:940px;
+    height: 675px;
+    margin: auto;
+}
+.noticeBoard{
+    position: relative;
+    width:470px;
+    height: 550px;
+    z-index: 10;
+}
+.noticeBtn{
+    position: absolute;
+    width:470px;
+}
+.noticeBtn > button{
+    width:145px;
+    height: 50px;
+    line-height: 50px;
+    padding-bottom: 45px;
+    box-sizing: content-box;
+    border-radius: 30px;
+    background-color: #9b656f;
+    font-size: 20px;
+    font-weight: 700;
+    color: #333;
+    margin-right: 13px;
+    transition: all 0.2s ease-out;
+}
+.noticeBtn > button:hover,
+.noticeBtn > button.on{
+    background-color: #e7e4cd;
+}
+.noticeBtn > button:last-child{
+    margin-right: 0;
+}
+.noticeBtn > button:nth-child(1) > span{
+    color: #0088cb;
+}
+.noticeBtn > button:nth-child(2) > span{
+    color:#f7941d;
+}
+.noticeBtn > button:nth-child(3) > span{
+    color:#829d46;
+}
+.noticeBtn > button.on{
+    background-color: #e7e4cd;
+}
+.boardContents{
+    position: absolute;
+    left: 0;
+    top:45px;
+    background-color: #e7e4cd;
+    width:470px;
+    height: 500px;
+    padding:25px 10px;
+    box-sizing: border-box;
+}
+
+.boardContents li{
+    display: none;
+    width:100%;
+    height: 100%;
+}
+
+.boardContents > li::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.boardContents hr{
+    width:430px;
+    height: 5px;
+    border: none;
+    border-radius: 5px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+.boardContents > li:nth-child(1) > hr{
+    background-color:#0088cb;
+}
+.boardContents > li:nth-child(2) > hr{
+    background-color: #f7941d;
+}
+.boardContents button{
+    float: right;
+    margin-bottom: 10px;
+    margin-right: 15px;
+    transition: all 0.3s ease-out;
+}
+.boardContents li:nth-child(1) > button:hover{
+    color:#0088cb;
+}
+.boardContents li:nth-child(2) > button:hover{
+    color:#f7941d;
+}
+table{
+    margin-left: 15px;
+    width:420px;
+    height: 430px;
+    border-collapse: collapse;
+}
+table tr{
+    border-bottom: 2px dotted rgba(0,0,0,0.3);
+    height: 52px;
+}
+table tr:last-child{
+    border-bottom: none;
+}
+table td{
+    text-indent: 30px;
+    position: relative;
+}
+table td::before{
+    content: "";
+    display: block;
+    position: absolute;
+    width:3px; height: 3px;
+    border-radius: 50%;
+    background-color: #111;
+    left: 13px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+.boardContents li:last-child{
+    position: relative;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+.galleryBox{
+    position: absolute;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    overflow: hidden;
+}
+.gallery > img{
+    border-radius: 20px;
+}
+.boardContents li:last-child > a{
+    cursor: pointer;
+    position: absolute;
+    top:50%;
+    transform: translateY(-50px);
+    font-size: 30px;
+    color:#9b656f;
+    opacity: 0.4;
+    transition: all 0.3s ease-out;
+}
+.boardContents li:last-child > a:last-child{
+    right: 0;
+    margin-right: 15px;
+}
+.boardContents li:last-child > a:hover{
+    opacity: 1;
+}
+.cm_munuBoard{
+    position: absolute;
+    bottom: 0; right: 0;
+    width:920px;
+    height: 600px;
+    background-color: #9b656f;
+    display: flex;
+}
+.cm_conenct{
+    width:460px;
+    margin-top: 500px;
+    color:#e7e4cd;
+    padding-left: 30px;
+    font-weight: bold;
+}
+.cm_conenct span{
+    font-size: 20px;
+    margin-right: 10px;
+}
+.cm_menuBtn{
+    width: 460px;
+    display: flex;
+}
+.cm_menuBtn > .menuRight{
+    margin-top:50px;
+    margin-bottom: 0px;
+}
+.cm_menuBtn button{
+    width:187px;
+    height:151px;
+    margin:70px 10px 0px 10px;
+    transform: scale(0.95);
+    transition:all 0.3s ease-out;
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.3);
+}
+.cm_menuBtn button:hover{
+    transform: scale(1)
+}

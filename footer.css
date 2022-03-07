@@ -1,0 +1,41 @@
+/*==============Footer====================*/
+footer{
+    width:100%;
+    min-width:1180px;
+    height:200px;
+    background-color: #181818;
+    margin:auto;
+    color:#e7e4cd;
+    font-size:12px;
+}
+footer > .wrap{
+    width:1180px;
+    height:200px;
+    margin:auto;
+    position:relative;
+}
+footer > .wrap > .logoImg{
+    position:absolute;
+    top:50%;
+    left:45px;
+    transform:translateY(-50%);
+}
+footer > .wrap > .txt{
+    position:absolute;
+    top:50%;
+    left:320px;
+    transform:translateY(-50%);
+}
+footer > .wrap > .txt span{
+    padding:0 15px;
+    border-right: 2px solid #e7e4cd;
+}
+footer > .wrap > .txt span:last-child{
+    border:none;
+}
+
+
+footer > .wrap > .txt > p:last-child > span:nth-child(2):hover,
+footer > .wrap > .txt > p:last-child > span:nth-child(3):hover{
+    color:#9b656f;
+}

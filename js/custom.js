@@ -29,31 +29,26 @@ let slides = document.querySelector(".slide > .wrap")
 let slide = document.querySelectorAll(".slide li")
 let currnetIndex = 0
 let slideCount = slide.length
-let slideWidth = 219;
-let slideMargin = 38;
-
+let slideWidth = slide[0].scrollWidth;
+let slideMargin = parseFloat(window.getComputedStyle(slide[0]).getPropertyValue("margin-right"));
+console.log(slideMargin)
 let prevBtn = document.querySelector(".tub > .cp_btn > .prev")
 let nextBtn = document.querySelector(".tub > .cp_btn > .next")
 
-slides.style.width = (slideWidth + slideMargin)*slideCount - slideMargin + 'px';
+slides.style.width = (slideWidth + slideMargin)*slideCount + 'px';
 
 function moveSlide(num){
-    slides.style.left = -num * 245 + 'px';
+    slides.style.transform = `translateX(${-num * (slideWidth + slideMargin)}px)`;
     currnetIndex = num;
 }
 nextBtn.addEventListener('click', function(){
-    if(currnetIndex < slideCount - 4){
+    if(currnetIndex < slideCount-4 ){
         moveSlide(currnetIndex + 1);
-        console.log(currnetIndex);
-    }else{
-        moveSlide(1)
     }
 });
 prevBtn.addEventListener('click', function(){
     if(currnetIndex > 0){
         moveSlide(currnetIndex - 1);
-    }else{
-        moveSlide(slideCount -5)
     }
 })
 
